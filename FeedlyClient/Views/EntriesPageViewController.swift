@@ -36,7 +36,7 @@ class EntriesPageViewController: UIPageViewController, UIPageViewControllerDataS
     
     private func getSelectedEntryIndex() -> Int {
         if let selectedEntryId = self.selectedEntry?.id {
-            for var index = 0; index < self.entries?.count; index++ {
+            for var index = 0; index < self.entries?.count; index += 1 {
                 if self.entries![index].id == selectedEntryId {
                     return index
                 }
@@ -54,7 +54,7 @@ class EntriesPageViewController: UIPageViewController, UIPageViewControllerDataS
             return nil
         }
         
-        index--
+        index -= 1
         
         return self.viewControllerAtIndex(index)
     }
@@ -66,7 +66,7 @@ class EntriesPageViewController: UIPageViewController, UIPageViewControllerDataS
             return nil
         }
         
-        index++
+        index += 1
         
         if index == self.entries?.count {
             return nil

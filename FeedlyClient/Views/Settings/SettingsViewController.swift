@@ -131,7 +131,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         loginButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         loginButton.setTitle("Login", forState: UIControlState.Normal)
-        loginButton.addTarget(self, action: "login:", forControlEvents: UIControlEvents.TouchUpInside)
+        loginButton.addTarget(self, action: #selector(SettingsViewController.login(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         cell.accessoryView = nil
         
         cell.contentView.addSubview(loginButton)
@@ -147,7 +147,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         logoutButton.setTitle("Logout", forState: UIControlState.Normal)
         cell.accessoryView = logoutButton
         
-        logoutButton.addTarget(self, action: "logout:", forControlEvents: UIControlEvents.TouchUpInside)
+        logoutButton.addTarget(self, action: #selector(SettingsViewController.logout(_:)), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func getDeleteDataCell(tableView: UITableView, forIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -168,7 +168,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         deleteButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         deleteButton.setTitle("Delete data", forState: UIControlState.Normal)
-        deleteButton.addTarget(self, action: "deleteData:", forControlEvents: UIControlEvents.TouchUpInside)
+        deleteButton.addTarget(self, action: #selector(SettingsViewController.deleteData(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         cell.contentView.addSubview(deleteButton)
         cell.accessoryView = nil
     }

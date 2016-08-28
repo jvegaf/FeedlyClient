@@ -11,7 +11,7 @@ class CategoriesViewController: UITableViewController, NSFetchedResultsControlle
         
         let refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(CategoriesViewController.refresh(_:)), forControlEvents: .ValueChanged)
         
         self.refreshControl = refreshControl
     }

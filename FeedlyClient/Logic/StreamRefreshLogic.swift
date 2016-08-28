@@ -106,7 +106,7 @@ internal class StreamRefreshLogic {
                 try Entry.updateThumbnail(entryId, thumbnail: thumbnailImage, inManagedObjectContext: self.managedObjectContext)
                 numberOfRetries = 0
             } catch {
-                numberOfRetries--
+                numberOfRetries = numberOfRetries - 1
             }
         }
     }

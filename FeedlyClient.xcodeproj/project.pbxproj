@@ -532,7 +532,7 @@
 				TargetAttributes = {
 					4E6ADAF01975A05000D3C72C = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = R7H8HFB8JC;
+						DevelopmentTeam = QVMM6USE2P;
 					};
 					4E6ADB001975A05100D3C72C = {
 						CreatedOnToolsVersion = 6.0;
@@ -804,7 +804,7 @@
 				INFOPLIST_FILE = FeedlyClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.florindanmunteanu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jvegaf.FeedlyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -824,7 +824,7 @@
 				INFOPLIST_FILE = FeedlyClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.florindanmunteanu.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jvegaf.FeedlyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
